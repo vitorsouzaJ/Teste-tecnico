@@ -36,7 +36,7 @@ Além disso, haverá um relacionamento entre as tabelas Produto e Carrinho.
 - **Sem Warnings ou Erros**: O código deve ser desenvolvido de forma a minimizar ou eliminar completamente qualquer aviso ou erro.
 - **Lib de Gerenciamento de Estado**: Utilize Redux ou uma lib similar para o gerenciamento do estado da aplicação.
 - **Lib de API**: Utilize Axios ou uma lib similar para realizar chamadas de API.
-- **Linguagem Back-End**: O backend deve ser desenvolvido em TypeScript.
+- **Linguagem Back-End**: O backend deve ser desenvolvido em TypeScript utilizando express.
 - **Lib Front-End**: Utilize React com componentes funcionais em TypeScript.
 - **Versionamento e Conventional Commits**: Utilize Git/GitHub para versionamento do código e siga uma convenção para os comentários.
 
