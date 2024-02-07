@@ -1,6 +1,11 @@
-# Teste de Desenvolvimento - Plataforma de Comércio Eletrônico
+# [PRAZO DE ENTREGA - 7 DIAS CORRIDOS]
+# Teste de Desenvolvimento - Plataforma de Comércio Eletrônico 
 
 Este projeto é parte de um teste de desenvolvimento para uma plataforma de comércio eletrônico. O objetivo é criar uma aplicação que inclua várias funcionalidades essenciais, como lista de desejos, carrinho de compras, gerenciamento de produtos, entre outros.
+
+## Inicialização
+
+Fazer um fork no repositório do projeto, quando estiver pronto, mandar o link do repositório no e-mail: dev@acheipneus.com.br 
 
 ## Funcionalidades Principais
 
