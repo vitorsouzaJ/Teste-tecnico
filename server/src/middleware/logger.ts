@@ -7,7 +7,7 @@ export const logger = async (
 ) => {
   console.log("Request");
 
-  console.log("Method - ", req.method);
+  console.log("METHOD - ", req.method);
   console.log("Endpoint - ", req.originalUrl);
 
   next();
