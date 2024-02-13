@@ -8,7 +8,7 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 
 Fazer um fork no repositório do projeto, quando estiver pronto, mandar o link do repositório no e-mail: dev@acheipneus.com.br
 
-[ ] A utilização dos templates é opcional
+[] A utilização dos templates é opcional
 
 ## Funcionalidades Principais
 
