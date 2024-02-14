@@ -62,7 +62,3 @@ Além disso, haverá um relacionamento entre as tabelas Produto e Carrinho.
 ## Autor
 
 [Seu nome ou informações de contato]
-
-## Licença
-
-[Inclua informações sobre a licença do projeto, se aplicável.]
