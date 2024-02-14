@@ -6,10 +6,10 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 
 ## Inicialização
 
-1 - Faça um fork do repositório do projeto.
-2 - Clone o repositório forkado para o seu ambiente local.
-3 - Utilize yarn dev para iniciar tanto o servidor backend quanto o frontend.
-4 - Quando finalizado, envie o link do repositório para dev@acheipneus.com.br.
+- Faça um fork do repositório do projeto.
+- Clone o repositório forkado para o seu ambiente local.
+- Utilize yarn dev para iniciar tanto o servidor backend quanto o frontend.
+- Quando finalizado, envie o link do repositório para dev@acheipneus.com.br.
 
 - A utilização dos templates é opcional
 
