@@ -8,7 +8,7 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 
 - Faça um fork do repositório do projeto.
 - Clone o repositório forkado para o seu ambiente local.
-- Utilize *`yarn dev`* para iniciar tanto o servidor backend quanto o frontend.
+- Utilize *`yarn dev`* para iniciar o frontend.
 - Quando finalizado, envie o link do repositório para dev@acheipneus.com.br.
 
 - A utilização dos templates é opcional
@@ -40,21 +40,10 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 
 - Cada produto possui pelo menos 5 atributos associados a ele.
 
-## Banco de Dados
-
-Para armazenar os dados da aplicação, será utilizado um banco de dados MySQL com as seguintes tabelas:
-
-- **Tabela Produto**: Armazena informações sobre os produtos disponíveis na plataforma.
-- **Tabela Carrinho**: Armazena informações sobre os itens no carrinho de compras dos usuários.
-
-Além disso, haverá um relacionamento entre as tabelas Produto e Carrinho.
-
 ## Requisitos de Desenvolvimento
 
 - **Sem Warnings ou Erros**: O código deve ser desenvolvido de forma a minimizar ou eliminar completamente qualquer aviso ou erro.
 - **Lib de Gerenciamento de Estado**: Utilize Redux ou uma lib similar para o gerenciamento do estado da aplicação.
-- **Lib de API**: Utilize Axios ou uma lib similar para realizar chamadas de API.
-- **Linguagem Back-End**: O backend deve ser desenvolvido em TypeScript utilizando express.
 - **Lib Front-End**: Utilize React com componentes funcionais em TypeScript.
 - **Versionamento e Conventional Commits**: Utilize Git/GitHub para versionamento do código e siga uma convenção para os comentários.
 
