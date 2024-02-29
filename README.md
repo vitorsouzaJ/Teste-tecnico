@@ -46,6 +46,7 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 - **Lib de Gerenciamento de Estado**: Utilize Redux ou uma lib similar para o gerenciamento do estado da aplicação.
 - **Lib Front-End**: Utilize React com componentes funcionais em TypeScript.
 - **Versionamento e Conventional Commits**: Utilize Git/GitHub para versionamento do código e siga uma convenção para os comentários.
+- **Utilizar JSON para produtos**
 
 ### Funcionamento da Aplicação
 
