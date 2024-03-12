@@ -1,7 +1,7 @@
-import { IProducts } from "../types/cart";
+import { IProduct } from "../types/cart";
 
 // eslint-disable-next-line no-undef
-export const product: IProducts[] = [
+export const product: IProduct[] = [
   {
     id: "d811566a-07b5-4340-bdbd-5125fd5207b2",
     price: 274.9,
