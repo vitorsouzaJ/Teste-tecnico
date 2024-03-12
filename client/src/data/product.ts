@@ -1,5 +1,5 @@
 import { IProduct } from "../types/cart";
-
+//Json dos Produtos
 // eslint-disable-next-line no-undef
 export const product: IProduct[] = [
   {

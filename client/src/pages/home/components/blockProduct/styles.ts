@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative; /* Adicionando position relative */
 
   @media (max-width: 768px) {
     width: 100%;
@@ -11,7 +12,7 @@ export const ProductContainer = styled.div`
 
 export const ProductImage = styled.div`
   background-image: ${(props) => `url('${props.imageUrl}')`};
-  height: 380px;
+  height: 320px;
   width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@ export const ProductImage = styled.div`
   transition: all 0.3s ease;
   background-color: transparent;
   background-blend-mode: color;
+  position: relative; /* Adicionando position relative */
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -33,4 +35,13 @@ export const ProductImage = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+`;
+
+export const AddItemToCart = styled.button`
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 `;
