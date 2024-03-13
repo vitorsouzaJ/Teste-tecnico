@@ -50,8 +50,30 @@ Este projeto é parte de um teste de desenvolvimento para uma plataforma de com�
 
 ### Funcionamento da Aplicação
 
-[Adicione aqui uma descrição do funcionamento da aplicação, explicando como as funcionalidades são implementadas e como o usuário pode interagir com elas.]
+#### Home:
+- Nesta tela, são exibidos todos os produtos disponíveis em nossa plataforma.
+Um select permite definir o tipo de busca, podendo ser por nome, altura, largura, aro, entre outros.
+Existe também um campo de entrada para inserir os critérios de busca.
+Os produtos podem ser reordenados por preço, relevância e quantidade vendida. Esta funcionalidade funciona em conjunto com os filtros aplicados.
+Carrinho:
 
+- Esta tela exibe os produtos adicionados ao carrinho pelo usuário.
+Permite ao usuário revisar os itens selecionados e proceder ao checkout.
+Lista de Desejos:
+
+- Aqui são apresentados os produtos marcados como desejados pelo usuário.
+Oferece a opção de adicionar ou remover itens da lista de desejos.
+
+### Carrinho:
+
+- Esta tela exibe os produtos adicionados ao carrinho pelo usuário.
+Permite ao usuário revisar os itens selecionados e excluir.
+
+#### Lista de Desejos:
+
+- Aqui são apresentados os produtos marcados como desejados pelo usuário.
+Oferece a opção de adicionar ou remover itens da lista de desejos.
 ## Autor
 
-[Seu nome ou informações de contato]
+Vitor Souza de Jesus
+Email- vvitorSouza15@gmail.com
