@@ -31,15 +31,18 @@ export const FormContainer = styled.div`
 
 export const Select = styled.select`
   margin-right: 5px;
-  height: 25px;
+  height: 30px;
   border-radius: 10px;
   padding-left: 10px;
+  font-size: 15px;
 `;
 
 export const Input = styled.input`
   margin-right: 5px;
   width: 70vh;
-  height: 25px;
+  height: 30px;
+  font-size: 15px;
+
   border-radius: 10px;
   padding: 8px;
 `;

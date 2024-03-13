@@ -1,34 +1,27 @@
 import { useSelector } from "react-redux";
 import * as ItemsListStyles from "./styles";
 import { Items } from "../item/item";
-import { IProduct } from "../../../../types/cart";
-import { getWishlistState } from "../../../../redux/cart/wishlist";
+import {
+  getWishlistState,
+  removeItemWishlist,
+} from "../../../../redux/cart/wishlist";
+import { useAppDispatch } from "../../../../hooks/redux";
+import { processItemsUtils } from "../../../../utils/utils";
 
 export const ItemsList = () => {
   const items = useSelector(getWishlistState);
 
-  interface ItemMap {
-    [itemId: string]: {
-      name: string;
-      id: string;
-      count: number;
-    };
-  }
   // Função para processar os itens e retornar uma lista atualizada com a contagem de repetições
-  const processItems = (items: IProduct) => {
-    const itemMap: ItemMap = {};
-    items.forEach((item: IProduct) => {
-      const itemId = item.name.id;
-      if (itemId in itemMap) {
-        itemMap[itemId].count++;
-      } else {
-        itemMap[itemId] = { ...item.name, count: 1 }; // Adicionando count ao item
-      }
-    });
-    return Object.values(itemMap);
-  };
+  const processedItems = processItemsUtils(items);
 
-  const processedItems = processItems(items);
+  const dispatch = useAppDispatch();
+
+  const handleRemove = (itemId) => {
+    // Aqui você pode passar o ID do item que deseja remover
+    dispatch(
+      removeItemWishlist(itemId) // Suponha que você tenha uma variável itemId
+    );
+  };
 
   return (
     <ItemsListStyles.Container>
@@ -36,7 +29,7 @@ export const ItemsList = () => {
         (item, index) =>
           item.name != null && (
             <ItemsListStyles.Item key={index}>
-              <Items item={item} />
+              <Items item={item} handleRemove={handleRemove} />
             </ItemsListStyles.Item>
           )
       )}

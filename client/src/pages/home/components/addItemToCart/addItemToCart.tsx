@@ -23,7 +23,16 @@ export const AddItemToCart: React.FC<AddItemToCartProps> = ({
   const handleAdd = () => {
     dispatch(
       addItem({
-        name: cart,
+        id: cart.id,
+        name: cart.name,
+        price: cart.price,
+        imageUrl: cart.imageUrl,
+        width: cart.width,
+        height: cart.height,
+        rim: cart.rim,
+        popularity: cart.popularity,
+        sold: cart.sold,
+        count: cart.count,
       })
     );
     setCart("");
@@ -32,7 +41,16 @@ export const AddItemToCart: React.FC<AddItemToCartProps> = ({
   const handleAddwishlist = () => {
     dispatch(
       addItemWishlist({
-        name: wishlist,
+        id: wishlist.id,
+        name: wishlist.name,
+        price: wishlist.price,
+        imageUrl: wishlist.imageUrl,
+        width: wishlist.width,
+        height: wishlist.height,
+        rim: wishlist.rim,
+        popularity: wishlist.popularity,
+        sold: wishlist.sold,
+        count: wishlist.count,
       })
     );
     setWishlist("");

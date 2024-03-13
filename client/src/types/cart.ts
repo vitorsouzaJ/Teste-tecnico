@@ -12,6 +12,7 @@ export interface IProduct {
   rim: number;
   popularity: number;
   sold: number;
+  count: number;
 }
 
 export interface ProductBlockProps {
@@ -24,4 +25,8 @@ export interface ItemMap {
     id: string;
     count: number;
   };
+}
+
+export interface ProductBlockProps {
+  product: IProduct;
 }

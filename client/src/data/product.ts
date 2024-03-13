@@ -11,6 +11,7 @@ export const product: IProduct[] = [
     popularity: 1,
     sold: 20,
     name: "Forceland Vitality F22",
+    count: 1,
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-91v-forceland-vitality-f22-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
   },
@@ -22,6 +23,7 @@ export const product: IProduct[] = [
     rim: 19,
     popularity: 5,
     sold: 20,
+    count: 1,
 
     name: "Barum Bravuris 5HM 91V",
     imageUrl:
@@ -35,6 +37,7 @@ export const product: IProduct[] = [
     rim: 19,
     popularity: 1,
     sold: 20,
+    count: 1,
 
     name: "91H Hankook Kinergy Eco K425",
     imageUrl:
@@ -48,6 +51,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Goodyear Kelly Edge Sport 2 91V",
     imageUrl:
@@ -61,6 +65,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Pirelli Cinturato P7 KS 91V",
     imageUrl:
@@ -74,6 +79,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Bridgestone Ecopia EP150 91V",
     imageUrl:
@@ -87,6 +93,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Goodyear Wrangler Territory AT 91H",
     imageUrl:
@@ -100,6 +107,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Continental RUN FLAT ContiPremiu...",
     imageUrl:
@@ -113,6 +121,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Continental PremiumContact 6 91V",
     imageUrl:
@@ -126,6 +135,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "Bridgestone RUN FLAT Turanza ER3...",
     imageUrl:
@@ -139,6 +149,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 4,
     sold: 20,
+    count: 1,
 
     name: "95W Forceland Vitality F22",
     imageUrl:
@@ -152,6 +163,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 1,
     sold: 20,
+    count: 1,
 
     name: "Hankook Kinergy GT H436 91H",
     imageUrl:
@@ -165,6 +177,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 2,
     sold: 15,
+    count: 1,
 
     name: "Goodyear Wrangler Territory HT 91V",
     imageUrl:
@@ -178,6 +191,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 5,
     sold: 25,
+    count: 1,
 
     name: "Bridgestone Turanza T005 91V",
     imageUrl:
@@ -191,6 +205,7 @@ export const product: IProduct[] = [
     rim: 18,
     popularity: 3,
     sold: 18,
+    count: 1,
 
     name: "Continental ContiPowerContact 91...",
     imageUrl:
