@@ -1,15 +1,38 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative; /* Adicionando position relative */
 
   @media (max-width: 768px) {
     width: 100%;
   }
 `;
+export const ProductInfo = styled.div`
+  margin-top: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  background-color: #d3d3d3;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
 
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: center;
+  }
+`;
 export const ProductImage = styled.div`
   background-image: ${(props) => `url('${props.imageUrl}')`};
   height: 320px;

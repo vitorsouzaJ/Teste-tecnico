@@ -10,9 +10,12 @@ export const Items: React.FC<ProductBlockProps> = ({ item, handleRemove }) => {
       <ItemsListStyles.CartImg
         imageUrl={item.imageUrl}
       ></ItemsListStyles.CartImg>
-      <p key={item.id}>
-        {item.name} - R$ {item.price}
-      </p>
+      <ItemsListStyles.ProductInfo>
+        <p key={item.id}>
+          Qnt-{item.count} {item.name}
+        </p>
+        <p key={item.id}>R$ {item.price}</p>
+      </ItemsListStyles.ProductInfo>
     </ItemsListStyles.Container>
   );
 };

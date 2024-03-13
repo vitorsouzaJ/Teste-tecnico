@@ -32,5 +32,26 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap; /* Adicionando flex-wrap */
+  flex-wrap: wrap;
+`;
+
+export const ProductInfo = styled.div`
+  margin-top: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  background-color: #d3d3d3;
+  height: 10vh;
+  width: 50vh;
+  border-radius: 10px;
+  padding: 10px;
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: center;
+    margin: 15px;
+  }
 `;

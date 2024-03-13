@@ -8,12 +8,13 @@ export const Items: React.FC<ProductBlockProps> = ({ item, handleRemove }) => {
   return (
     <ItemsListStyles.Container>
       <ButtonDelete item={item} handleRemove={handleRemove}></ButtonDelete>
-      <ItemsListStyles.CartImg
-        imageUrl={item.imageUrl}
-      ></ItemsListStyles.CartImg>
-      <p key={item.id}>
-        Qnt-{item.count} {item.name} - R$ {item.price}
-      </p>
+      <ItemsListStyles.CartImg imageUrl={item.test}></ItemsListStyles.CartImg>
+      <ItemsListStyles.ProductInfo>
+        <p key={item.id}>
+          Qnt-{item.count} {item.name}
+        </p>
+        <p key={item.id}>R$ {item.price}</p>
+      </ItemsListStyles.ProductInfo>
     </ItemsListStyles.Container>
   );
 };
