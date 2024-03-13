@@ -1,12 +1,19 @@
 import { useSelector } from "react-redux";
-import { getCartItemsState } from "../../../../redux/cart/cartSlice";
 import * as ItemsListStyles from "./styles";
 import { Items } from "../item/item";
-import { IProduct, ItemMap } from "../../../../types/cart";
+import { IProduct } from "../../../../types/cart";
+import { getWishlistState } from "../../../../redux/cart/wishlist";
 
 export const ItemsList = () => {
-  const items = useSelector(getCartItemsState);
+  const items = useSelector(getWishlistState);
 
+  interface ItemMap {
+    [itemId: string]: {
+      name: string;
+      id: string;
+      count: number;
+    };
+  }
   // Função para processar os itens e retornar uma lista atualizada com a contagem de repetições
   const processItems = (items: IProduct) => {
     const itemMap: ItemMap = {};

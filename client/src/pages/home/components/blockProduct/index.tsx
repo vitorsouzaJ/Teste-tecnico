@@ -1,18 +1,24 @@
 import { useState } from "react";
-import { ProductBlockProps } from "../../../../types/cart";
+import { IProduct, ProductBlockProps } from "../../../../types/cart";
 import { AddItemToCart } from "../addItemToCart/addItemToCart.js";
 
 import * as Styles from "./styles.js";
 
 const ProductBlock: React.FC<ProductBlockProps> = ({ product }) => {
-  const [name, setName] = useState<string>(product);
+  const [cart, setCart] = useState<IProduct>(product);
+  const [wishlist, setWishlist] = useState<IProduct>(product);
 
   return (
-    //Componente para que monda o bloco de um so produto
+    //Componente para  montar  bloco de 1 produto
     <Styles.ProductContainer>
       <Styles.ProductImage imageUrl={product.imageUrl}></Styles.ProductImage>
       <Styles.AddItemToCart>
-        <AddItemToCart setName={setName} name={name}></AddItemToCart>
+        <AddItemToCart
+          setCart={setCart}
+          cart={cart}
+          wishlist={wishlist}
+          setWishlist={setWishlist}
+        ></AddItemToCart>
       </Styles.AddItemToCart>
     </Styles.ProductContainer>
   );

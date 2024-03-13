@@ -15,3 +15,11 @@ export interface IProduct {
 export interface ProductBlockProps {
   product: IProduct;
 }
+
+export interface ItemMap {
+  [itemId: string]: {
+    name: string;
+    id: string;
+    count: number;
+  };
+}

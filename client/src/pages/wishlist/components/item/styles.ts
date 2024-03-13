@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CartImg = styled.div`
   background-image: ${(props) => `url('${props.imageUrl}')`};
-  height: 30vh;
-  width: 25vh;
+  height: 50vh;
+  width: 50vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,6 +15,7 @@ export const CartImg = styled.div`
   background-color: transparent;
   background-blend-mode: color;
   position: relative;
+  margin: 20px;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
