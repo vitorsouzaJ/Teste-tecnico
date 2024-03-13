@@ -16,7 +16,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ product }) => {
           <p>{product.name}</p>
           <p>R${product.price}</p>
         </Styles.ProductInfo>
-        <Styles.ProductImage imageUrl={product.test}></Styles.ProductImage>
+        <Styles.ProductImage imageUrl={product.imageUrl}></Styles.ProductImage>
         <Styles.AddItemToCart>
           <AddItemToCart
             setCart={setCart}
