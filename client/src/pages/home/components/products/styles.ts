@@ -10,6 +10,13 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+  @media (min-width: 768px) {
+    /* Limita o número máximo de colunas a 4 */
+    @supports (grid-template-columns: repeat(4, 1fr)) {
+      grid-template-columns: repeat(min(4, auto-fill), minmax(300px, 1fr));
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -50,4 +57,12 @@ export const SearchButton = styled.button`
     background-blend-mode: color;
     cursor: pointer;
   }
+`;
+
+export const Ordering = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  padding-right: 50px;
 `;

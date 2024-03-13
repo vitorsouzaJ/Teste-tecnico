@@ -24,7 +24,7 @@ export const ProductImage = styled.div`
   transition: all 0.3s ease;
   background-color: transparent;
   background-blend-mode: color;
-  position: relative; /* Adicionando position relative */
+  position: relative;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);

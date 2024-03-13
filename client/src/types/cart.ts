@@ -10,6 +10,8 @@ export interface IProduct {
   width: number;
   height: number;
   rim: number;
+  popularity: number;
+  sold: number;
 }
 
 export interface ProductBlockProps {

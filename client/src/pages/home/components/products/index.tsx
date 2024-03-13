@@ -3,12 +3,23 @@ import { product } from "../../../../data/product";
 import ProductBlock from "../blockProduct";
 import * as Styles from "./styles.js";
 import { FaSearch } from "react-icons/fa";
-import { IProduct } from "../../../../types/cart.js";
+import {
+  sortByPopularityDescending,
+  sortByPriceAscending,
+  sortByPriceDescending,
+  sortBySoldAscending,
+  sortBySoldDescending,
+} from "../../utils/index.js";
 
 export const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("");
   const [selectedValue, setSelectedValue] = useState("name");
+  const [sortBy, setSortBy] = useState("biggestPrice"); // Estado para armazenar a opção selecionada
+
+  const handleSortChange = (event) => {
+    setSortBy(event.target.value);
+  };
 
   const handleSubmit = (d) => {
     d.preventDefault();
@@ -16,12 +27,26 @@ export const Products = () => {
   };
 
   const filteredProducts = (nomePropriedade) => {
-    return product.filter((produto) =>
+    let filtered = product.filter((produto) =>
       produto[nomePropriedade]
         .toString()
         .toLowerCase()
         .includes(filter.toString().toLowerCase())
     );
+    switch (sortBy) {
+      case "biggestPrice":
+        return sortByPriceDescending(filtered);
+      case "LowestPrice":
+        return sortByPriceAscending(filtered);
+      case "bestSellers":
+        return sortBySoldDescending(filtered);
+      case "leastSold":
+        return sortBySoldAscending(filtered);
+      case "moreRelevant":
+        return sortByPopularityDescending(filtered);
+      default:
+        return filtered;
+    }
   };
 
   const handleSelectChange = (event) => {
@@ -36,7 +61,7 @@ export const Products = () => {
             <option value="price">Preço</option>
             <option value="width">Largura</option>
             <option value="height">Altura</option>
-            <option value="rimSizes.rim">Aro</option>
+            <option value="rim">Aro</option>
             <option value="name">Nome</option>
           </Styles.Select>
           <Styles.Input
@@ -49,7 +74,15 @@ export const Products = () => {
           </Styles.SearchButton>
         </Styles.FormContainer>
       </Styles.Form>
-
+      <Styles.Ordering>
+        <Styles.Select value={sortBy} onChange={handleSortChange}>
+          <option value="biggestPrice">MAIOR PREÇO</option>
+          <option value="LowestPrice">MENOR PREÇO</option>
+          <option value="bestSellers">MAIS VENDIDOS</option>
+          <option value="leastSold">MENOS VENDIDOS</option>
+          <option value="moreRelevant">MAIS RELEVANTE</option>
+        </Styles.Select>
+      </Styles.Ordering>
       <Styles.Container>
         {filteredProducts(selectedValue).map((product) => (
           <ProductBlock product={product}></ProductBlock>
