@@ -4,10 +4,10 @@ import { IProduct } from "../types/cart";
 export const product: IProduct[] = [
   {
     id: "d811566a-07b5-4340-bdbd-5125fd5207b2",
-    price: 274.9,
+    price: 25,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Forceland Vitality F22",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-91v-forceland-vitality-f22-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -17,7 +17,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Barum Bravuris 5HM 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-barum-bravuris-5hm-91v-1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300&format=jpeg",
@@ -27,7 +27,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "91H Hankook Kinergy Eco K425",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-91h-hankook-kinergy-eco-k425-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -37,7 +37,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Goodyear Kelly Edge Sport 2 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-goodyear-kelly-edge-sport-2-91v-1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300&format=jpeg",
@@ -47,7 +47,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Pirelli Cinturato P7 KS 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-pirelli-cinturato-p7-ks-91v-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -57,7 +57,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Bridgestone Ecopia EP150 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-bridgestone-ecopia-ep150-91v-1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300&format=jpeg",
@@ -67,7 +67,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Goodyear Wrangler Territory AT 91H",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-goodyear-wrangler-territory-at-91h-1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300&format=jpeg",
@@ -77,7 +77,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Continental RUN FLAT ContiPremiu...",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-continental-run-flat-contipremiumcontact-ssr-91w-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -87,7 +87,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Continental PremiumContact 6 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-continental-premiumcontact-6-91v-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -97,7 +97,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Bridgestone RUN FLAT Turanza ER3...",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r16-bridgestone-run-flat-turanza-er300-91w-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -107,7 +107,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "95W Forceland Vitality F22",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r17-95w-forceland-vitality-f22-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -117,7 +117,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Hankook Kinergy GT H436 91H",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r17-hankook-kinergy-gt-h436-91h-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -127,7 +127,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Goodyear Wrangler Territory HT 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r17-goodyear-wrangler-territory-ht-91v-1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300&format=jpegg",
@@ -137,7 +137,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Bridgestone Turanza T005 91V",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/-/1/-1_89.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",
@@ -147,7 +147,7 @@ export const product: IProduct[] = [
     price: 274.9,
     width: 205,
     height: 55,
-    rimSizes: [{ rim: 16 }, { rim: 17 }, { rim: 18 }],
+    rim: 18,
     name: "Continental ContiPowerContact 91...",
     imageUrl:
       "https://www.acheipneus.com.br/media/catalog/product/p/n/pneu-20555r17-continental-contipowercontact-91v-original-nissan-kicks-fluence-1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=300&width=240&canvas=240:300",

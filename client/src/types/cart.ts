@@ -9,7 +9,7 @@ export interface IProduct {
   imageUrl: string;
   width: number;
   height: number;
-  rimSizes: { rim: number }[];
+  rim: number;
 }
 
 export interface ProductBlockProps {

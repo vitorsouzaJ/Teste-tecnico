@@ -10,17 +10,20 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ product }) => {
 
   return (
     //Componente para  montar  bloco de 1 produto
-    <Styles.ProductContainer>
-      <Styles.ProductImage imageUrl={product.imageUrl}></Styles.ProductImage>
-      <Styles.AddItemToCart>
-        <AddItemToCart
-          setCart={setCart}
-          cart={cart}
-          wishlist={wishlist}
-          setWishlist={setWishlist}
-        ></AddItemToCart>
-      </Styles.AddItemToCart>
-    </Styles.ProductContainer>
+    <>
+      <Styles.ProductContainer>
+        <p>{product.name}</p>
+        <Styles.ProductImage imageUrl={product.imageUrl}></Styles.ProductImage>
+        <Styles.AddItemToCart>
+          <AddItemToCart
+            setCart={setCart}
+            cart={cart}
+            wishlist={wishlist}
+            setWishlist={setWishlist}
+          ></AddItemToCart>
+        </Styles.AddItemToCart>
+      </Styles.ProductContainer>
+    </>
   );
 };
 
